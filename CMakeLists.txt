@@ -4,7 +4,7 @@ set(PROJECT_VERSION_MAJOR "1")
 set(PROJECT_VERSION_MINOR "1")
 set(PROJECT_VERSION_PATCH "0")
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
-project(GraphTest VERSION ${PROJECT_VERSION} LANGUAGES CXX)
+project(Graph-playground VERSION ${PROJECT_VERSION} LANGUAGES CXX)
 
 include(FeatureSummary)
 include(GNUInstallDirs)
@@ -19,12 +19,12 @@ file(GLOB SRCS
     ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp
 )
 
-add_executable(GraphTest
+add_executable(Graph-playground
     ${SRCS}
     app.qrc
 )
 
-target_link_libraries(GraphTest
+target_link_libraries(Graph-playground
     PRIVATE
     Qt5::Widgets
     Qt5::Qml)

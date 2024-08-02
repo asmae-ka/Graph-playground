@@ -36,7 +36,6 @@ Window {
             anchors.fill: parent
             pinch.dragAxis: Pinch.YAxis
             onPinchUpdated: {
-                console.warn("y axis")
                 let pinchScale = pinch.scale * pinch.previousScale
                 if (pinchScale > 1.0) {
                     chartView.height = root.height
